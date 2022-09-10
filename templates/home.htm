@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit Scoring</title>
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}} "> -->
+<style>
+    body {background-color: powderblue;}
+    h2 {color:DodgerBlue;}
+    p {color : Crimson}	
+</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+		<div id="brandname">
+			<h1 style="text-align:center;color: purple;background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);">Customer LifeTime Value</h1>
+		</div>
+		<h2 style="text-align:center;"> Customer Group</h2>
+		</div>
+ 	</header>
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+			Retailer_name <input type ="test" name="rn" step="any">
+			Recent Transaction Date <input type ="date" name="ltd" step="any">
+			No. of order PA <input type ="number" name="fr" step="any">
+			Gross Revenue <input type ="number" name="gr" step="any">
+			<input type="submit" value="predict">
+		</form>
+
+	</div>
+		
+</body>
+</html>
